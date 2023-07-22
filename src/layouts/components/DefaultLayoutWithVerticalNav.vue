@@ -1,6 +1,5 @@
-<script lang="ts" setup>
+<script setup>
 import { useTheme } from 'vuetify'
-
 import upgradeBannerDark from '@images/pro/upgrade-banner-dark.png'
 import upgradeBannerLight from '@images/pro/upgrade-banner-light.png'
 import VerticalNavLayout from '@layouts/components/VerticalNavLayout.vue'
@@ -11,8 +10,6 @@ import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTit
 import Footer from '@/layouts/components/Footer.vue'
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
 import UserProfile from '@/layouts/components/UserProfile.vue'
-
-// Banner
 
 const vuetifyTheme = useTheme()
 

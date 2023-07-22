@@ -12,8 +12,10 @@ import { createApp } from 'vue'
 
 loadFonts()
 
+
 // Create vue app
 const app = createApp(App)
+
 
 // Use plugins
 app.use(vuetify)

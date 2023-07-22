@@ -1,19 +1,5 @@
-<script lang="ts" setup>
-interface DataItem {
-  responsiveId: string
-  id: number
-  fullName: string
-  post: string
-  email: string
-  city: string
-  start_date: string
-  salary: number
-  age: string
-  experience: string
-  status: number
-}
-
-const data: DataItem[] = [
+<script setup>
+const data = [
   {
     responsiveId: '',
     id: 95,
@@ -120,7 +106,7 @@ const data: DataItem[] = [
   },
 ]
 
-const status: Record<DataItem['status'], string> = {
+const status = {
   1: 'Current',
   2: 'Professional',
   3: 'Rejected',
@@ -128,7 +114,7 @@ const status: Record<DataItem['status'], string> = {
   5: 'Applied',
 }
 
-const statusColor: Record<typeof status[number], string> = {
+const statusColor = {
   Current: 'primary',
   Professional: 'success',
   Rejected: 'error',
@@ -178,15 +164,29 @@ const usreList = data
 
           <td>
             <div class="d-flex flex-column">
-              <h6 class="text-sm font-weight-medium">{{ row.fullName }}</h6>
+              <h6 class="text-sm font-weight-medium">
+                {{ row.fullName }}
+              </h6>
               <span class="text-xs">{{ row.post }}</span>
             </div>
           </td>
 
-          <td class="text-sm" v-text="row.email" />
-          <td class="text-sm" v-text="row.start_date" />
-          <td class="text-sm" v-text="`$${row.salary}`" />
-          <td class="text-sm" v-text="row.age" />
+          <td
+            class="text-sm"
+            v-text="row.email"
+          />
+          <td
+            class="text-sm"
+            v-text="row.start_date"
+          />
+          <td
+            class="text-sm"
+            v-text="`$${row.salary}`"
+          />
+          <td
+            class="text-sm"
+            v-text="row.age"
+          />
           <!-- status -->
           <td>
             <VChip

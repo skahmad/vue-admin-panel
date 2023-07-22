@@ -31,6 +31,4 @@ dist-ssr
 .yarn
 
 # iconify dist files
-src/@iconify/*.js
-
-materio-vuetify-vuejs-admin-template-free-main
+src/@iconify/icons-bundle.js

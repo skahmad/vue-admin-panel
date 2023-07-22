@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { useTheme } from 'vuetify';
+<script setup>
+import { useTheme } from 'vuetify'
 
 const { global } = useTheme()
 

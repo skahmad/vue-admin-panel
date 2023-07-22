@@ -1,6 +1,4 @@
-import type { VuetifyOptions } from 'vuetify'
-
-const theme: VuetifyOptions['theme'] = {
+const theme = {
   defaultTheme: 'light',
   themes: {
     light: {
@@ -33,7 +31,6 @@ const theme: VuetifyOptions['theme'] = {
         'skin-bordered-background': '#fff',
         'skin-bordered-surface': '#fff',
       },
-
       variables: {
         'code-color': '#d400ff',
         'overlay-scrim-background': '#3A3541',

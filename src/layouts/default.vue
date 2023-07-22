@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import DefaultLayoutWithVerticalNav from './components/DefaultLayoutWithVerticalNav.vue';
+<script setup>
+import DefaultLayoutWithVerticalNav from './components/DefaultLayoutWithVerticalNav.vue'
 </script>
 
 <template>

@@ -23,6 +23,10 @@ export default defineConfig({
       dts: true,
     }),
     AutoImport({
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+      },
       imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/math', 'pinia'],
       vueTemplate: true,
     }),
