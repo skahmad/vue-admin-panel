@@ -76,13 +76,44 @@ const upgradeBanner = computed(() => {
           to: '/dashboard',
         }"
       />
-      <VerticalNavLink
-        :item="{
-          title: 'Account Settings',
-          icon: 'mdi-account-cog-outline',
-          to: '/account-settings',
-        }"
-      />
+      <VerticalNavLink 
+        :item="{ 
+            title: 'Account Settings', 
+            icon: 'mdi-account-cog-outline', 
+            to: '/account-settings'
+            }"
+        />
+
+        <!-- Modules -->
+        <VerticalNavSectionTitle
+            :item="{
+                heading: 'Modules',
+            }"
+        />
+        <VerticalNavLink
+            :item="{
+            title: 'Rest Flows',
+            icon: 'mdi-login',
+            to: '/rest-flows',
+            }"
+        />
+
+        <VerticalNavLink
+            :item="{
+            title: 'Database',
+            icon: 'mdi-login',
+            to: '/databases',
+            }"
+        />
+
+        <VerticalNavLink
+            :item="{
+            title: 'Robot',
+            icon: 'mdi-login',
+            to: '/robot',
+            }"
+        />
+
 
       <!-- 👉 Pages -->
       <VerticalNavSectionTitle
@@ -156,21 +187,7 @@ const upgradeBanner = computed(() => {
     </template>
 
     <template #after-vertical-nav-items>
-      <!-- 👉 illustration -->
-      <a
-        href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="margin-left: 7px;"
-      >
-        <img
-          :src="upgradeBanner"
-          alt="upgrade-banner"
-          transition="scale-transition"
-          class="upgrade-banner mx-auto"
-          style="max-width: 230px;"
-        >
-      </a>
+      
     </template>
 
     <!-- 👉 Pages -->
